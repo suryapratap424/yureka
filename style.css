@@ -1,3 +1,4 @@
+/* -------------------general---------------------- */
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 * {
   margin: 0%;
@@ -9,11 +10,11 @@
   --yellow: #d9ad4c;
 }
 
-body,
+/* body,
 html {
   width: 100%;
   height: 100%;
-}
+} */
 
 #container-fluid {
   background-color: var(--blue);
@@ -35,7 +36,7 @@ a.button {
 
 a.primary {
   /* background-color: var(--yellow);
-    border: none; */
+  border: none; */
   border-radius: 4px;
   background: var(--test, linear-gradient(270deg, #dcab3f 0%, #aa7f3e 95.84%));
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -46,6 +47,7 @@ a.secondary {
   border: 2px solid var(--yellow);
 }
 
+/* -------------------navbar---------------------- */
 nav img {
   height: 50px;
 }
@@ -67,13 +69,14 @@ nav .side {
   gap: 2rem;
 }
 
+/* -------------------hero---------------------- */
 #hero {
   margin-top: 10rem;
-  height: 80vh;
+  /* height: 80vh; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 #hero img {
@@ -87,10 +90,10 @@ nav .side {
     #c09542 9.85%,
     #e8c67b 42.94%,
     #be8f32 73.66%
-  );
-
-  background-clip: text;
-  -webkit-background-clip: text;
+    );
+    
+    background-clip: text;
+    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* color: var(--yellow); */
 }
@@ -119,4 +122,13 @@ nav .side {
   display: flex;
   align-items: center;
   /* gap: 1rem; */
+}
+#imgdiv {
+  position: relative;
+}
+
+#imgdiv img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
 }
