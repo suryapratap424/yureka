@@ -24,6 +24,7 @@ button{
 }
 button.primary{
     background-color: var(--yellow);
+    border: none;
 }
 button.secondary{
     background-color: transparent;
@@ -46,4 +47,16 @@ nav .side{
     justify-content: space-around;
     align-items: center;
     font-size: small;
+}
+#hero{
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#hero img{
+    width: 90%;
+}
+#hero span{
+    color: var(--yellow);
 }
