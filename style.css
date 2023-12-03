@@ -146,6 +146,82 @@ nav .side {
 #imgdiv img {
   /* width: 100%; */
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
+}
+
+
+
+* --------------- Focus container --------------- */
+#focus-faild-main {
+  width: 100%;
+  background: linear-gradient(91deg, rgba(255, 255, 0, 0) 0%, rgba(129, 176, 229, 0.103) 30%, rgba(238, 130, 238, 0) 58%);
+  padding: 2rem 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.focus-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.focus-boxes p {
+  font-size: 16px;
+  color: var(--text-color-white);
+}
+
+.focus-boxes .boxe {
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
+  padding-right: 2.5rem;
+}
+
+.focus-boxes .boxe:last-child {
+  border: none;
+}
+
+.focus-boxes .boxe h3 {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+
+
+* --------------- Focus container --------------- */
+#focus-faild-main {
+  width: 100%;
+  background: linear-gradient(91deg, rgba(255, 255, 0, 0) 0%, rgba(129, 176, 229, 0.103) 30%, rgba(238, 130, 238, 0) 58%);
+  padding: 2rem 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.focus-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.focus-boxes p {
+  font-size: 16px;
+  color: var(--text-color-white);
+}
+
+.focus-boxes .boxe {
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
+  padding-right: 2.5rem;
+}
+
+.focus-boxes .boxe:last-child {
+  border: none;
+}
+
+.focus-boxes .boxe h3 {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 60px;
 }
