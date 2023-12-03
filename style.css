@@ -8,20 +8,31 @@
   --blue: #142840;
   --yellow: #d9ad4c;
 }
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
 #container-fluid {
   background-color: var(--blue);
 }
+
 a {
   text-decoration: none;
 }
+
 #container {
-  width: 75%;
+  width: 80%;
   margin: auto;
 }
+
 a.button {
-  padding: 1rem;
+  padding: .5rem;
   border-radius: 5px;
 }
+
 a.primary {
   /* background-color: var(--yellow);
     border: none; */
@@ -29,38 +40,47 @@ a.primary {
   background: var(--test, linear-gradient(270deg, #dcab3f 0%, #aa7f3e 95.84%));
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 a.secondary {
   color: var(--yellow);
   border: 2px solid var(--yellow);
 }
+
 nav img {
   height: 50px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   padding: 0.2rem;
   padding-top: 1rem;
 }
+
 nav .side {
-  width: 50%;
+  /* width: 50%; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   /* font-size: small; */
+  gap: 2rem;
 }
+
 #hero {
   margin-top: 10rem;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow-x: hidden;
 }
+
 #hero img {
   /* width: 100%; */
   /* transform: translateX(20%); */
 }
+
 #hero span {
   background: linear-gradient(
     88deg,
@@ -68,11 +88,13 @@ nav .side {
     #e8c67b 42.94%,
     #be8f32 73.66%
   );
+
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* color: var(--yellow); */
 }
+
 #hero div:first-child {
   display: flex;
   /* height: 468px; */
@@ -83,7 +105,18 @@ nav .side {
   align-self: stretch;
   width: 40%;
 }
+
 #hero h1 {
   font-size: xx-large;
   font-weight: 100;
+}
+
+/* .play-btn i {
+  color: #142840;
+} */
+
+.flex {
+  display: flex;
+  align-items: center;
+  /* gap: 1rem; */
 }
