@@ -6,8 +6,7 @@
   box-sizing: border-box;
   font-family: "Poppins";
   color: white;
-  --blue: #142840;
-  --yellow: #d9ad4c;
+
 }
 
 /* body,
@@ -15,6 +14,11 @@ html {
   width: 100%;
   height: 100%;
 } */
+
+:root {
+  --blue: #142840;
+  --yellow: #d9ad4c;
+}
 
 #container-fluid {
   background-color: var(--blue);
