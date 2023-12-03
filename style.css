@@ -76,11 +76,8 @@ nav .side {
 /* -------------------hero---------------------- */
 #hero {
   margin-top: 10rem;
-  /* height: 80vh; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* overflow-x: hidden; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 #hero img {
@@ -110,14 +107,27 @@ nav .side {
   gap: 32px;
   flex-shrink: 0;
   align-self: stretch;
-  width: 40%;
+  /* width: 40%; */
 }
 
 #hero h1 {
-  font-size: xx-large;
-  font-weight: 100;
+  font-size: 50px;
 }
-
+#hero p {
+  font-size: 22px;
+}
+#hero>*:not(h1,p) {
+  font-size: 20px;
+}
+.hero-image {
+  /* width: 100%; */
+  height: max-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
 /* .play-btn i {
   color: #142840;
 } */
@@ -128,13 +138,54 @@ nav .side {
   /* gap: 1rem; */
 }
 #imgdiv {
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
 #imgdiv img {
+  /* width: 100%; */
   position: absolute;
   top: 0%;
   left: 0%;
+}
+
+
+
+* --------------- Focus container --------------- */
+#focus-faild-main {
+  width: 100%;
+  background: linear-gradient(91deg, rgba(255, 255, 0, 0) 0%, rgba(129, 176, 229, 0.103) 30%, rgba(238, 130, 238, 0) 58%);
+  padding: 2rem 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.focus-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.focus-boxes p {
+  font-size: 16px;
+  color: var(--text-color-white);
+}
+
+.focus-boxes .boxe {
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
+  padding-right: 2.5rem;
+}
+
+.focus-boxes .boxe:last-child {
+  border: none;
+}
+
+.focus-boxes .boxe h3 {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 60px;
 }
 
 
