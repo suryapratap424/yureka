@@ -22,6 +22,7 @@ html {
 
 #container-fluid {
   background-color: var(--blue);
+  overflow: hidden;
 }
 
 a {
@@ -54,6 +55,11 @@ a.primary {
 a.secondary {
   color: var(--yellow);
   border: 2px solid var(--yellow);
+}
+
+h2 {
+  font-size: 42px;
+  color: var(--text-color-white);
 }
 
 /* -------------------navbar---------------------- */
@@ -90,7 +96,7 @@ nav .side {
   /* transform: translateX(20%); */
 }
 
-#hero span {
+ .gold {
   background: linear-gradient(
     88deg,
     #c09542 9.85%,
@@ -101,7 +107,6 @@ nav .side {
     background-clip: text;
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* color: var(--yellow); */
 }
 
 #hero div:first-child {
@@ -160,6 +165,7 @@ nav .side {
 
 
 /* --------------- Focus container --------------- */
+
 #focus-faild-main {
   width: 100%;
   background: linear-gradient(91deg, rgba(255, 255, 0, 0) 0%, rgba(129, 176, 229, 0.103) 30%, rgba(238, 130, 238, 0) 58%);
@@ -203,6 +209,7 @@ nav .side {
   background: linear-gradient(91deg, rgba(255, 255, 0, 0) 0%, rgba(129, 176, 229, 0.103) 30%, rgba(238, 130, 238, 0) 58%);
   padding: 2rem 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  margin: 5rem 0;
 }
 
 .focus-boxes {
@@ -233,6 +240,111 @@ nav .side {
   line-height: 60px;
 }
 
+
+/* --------------- Markiting Analysis --------------- */
+#marketing-container {
+width: 80%;
+margin: auto;
+}
+
+#marketing-container > p {
+  font-size: 24px;
+  color: var(--text-color-white);
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+#marketing-container h2 {
+  text-align: center;
+  justify-content: center;
+  gap: .4rem;
+}
+
+#marketing-container .arrow-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: linear-gradient(rgba(22, 72, 125, 1),
+  rgba(20, 40, 64, 1));
+  display: grid;
+  place-items: center;
+  /* border: 2px solid red; */
+  border-radius: 50%;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.market-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.market-content > div {
+  width: 100%;
+}
+
+.market-content .left-content > div {
+  display: flex;
+  background: linear-gradient(rgba(27, 51, 81, 0.8),
+  rgba(20, 41, 67, 0.8));
+  width: 100%;
+  font-size: 18px;
+  color: var(--text-color-white);
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+  gap: 1rem;
+  align-items: self-start;
+}
+
+.arrow-btn {
+  aspect-ratio: 3/2;
+}
+
+
+
+/* .--------------- works mobile --------------- */
+#mobile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 6rem auto;
+  background: linear-gradient(rgba(27, 51, 81, 0.8),
+  rgba(20, 41, 67, 0.8));
+  box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  margin-top: 10rem;
+  padding: 3rem;
+}
+
+#mobile-container > div {
+  width: 100%;
+}
+
+#mobile-container .left-mobile-content h2 {
+  padding-top: 2rem;
+}
+
+.work-video img {
+  width: 100%;
+}
+
+.trade {
+  font-size: 18px;
+  padding-bottom: .7rem;
+}
+
+#mobile-container .left-mobile-content .pade {
+  line-height: 30px;
+  padding: .8rem 0;
+  font-size: 18px;
+}
+
+#mobile-container .left-mobile-content .seond-btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+}
 
 /* -----------------circle------------------- */
 
@@ -269,3 +381,4 @@ nav .side {
 .other-elements div:nth-child(4) { transform: translate(-150px,0); }
 .other-elements div:nth-child(5) { transform: translate(calc(-150px*0.877),calc(-150px*0.5)); }
 .other-elements div:nth-child(6) { transform: translate(calc(-150px*0.877),calc(150px*0.5)); }
+
