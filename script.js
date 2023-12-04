@@ -10,7 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Move to the next image
         index = (index + 1) % images.length;
         // Delay before showing the next image (adjust as needed)
-        setTimeout(showNextImage, 2000);  // Adjust the delay (in milliseconds) between images
+        // if(index==2){
+        //     setTimeout(showNextImage, 1000);  // Adjust the delay (in milliseconds) between images
+        // }else{
+            setTimeout(showNextImage, 2000);  // Adjust the delay (in milliseconds) between images
+        // }
     }
 
     // Initial call to start the sequence
