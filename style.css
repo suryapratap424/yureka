@@ -64,6 +64,18 @@ h2 {
   color: var(--text-color-white);
 }
 
+.gold {
+  background: linear-gradient(
+    88deg,
+    #c09542 9.85%,
+    #e8c67b 42.94%,
+    #be8f32 73.66%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* -------------------navbar---------------------- */
 nav img {
   height: 50px;
@@ -89,27 +101,8 @@ nav .side {
 /* -------------------hero---------------------- */
 #hero {
   margin-top: 10rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
-#hero img {
-  /* width: 100%; */
-  /* transform: translateX(20%); */
-}
-
-.gold {
-  background: linear-gradient(
-    88deg,
-    #c09542 9.85%,
-    #e8c67b 42.94%,
-    #be8f32 73.66%
-  );
-
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 #hero div:first-child {
   display: flex;
@@ -134,15 +127,6 @@ nav .side {
   font-size: 20px;
 }
 
-.hero-image {
-  /* width: 100%; */
-  height: max-content;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.5s ease-in;
-}
 
 /* .play-btn i {
   color: #142840;
@@ -154,19 +138,17 @@ nav .side {
   /* gap: 1rem; */
 }
 
-#imgdiv {
-  display: flex;
-  flex-direction: column;
+.imgdiv {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-#imgdiv img {
-  /* width: 100%; */
+.imgdiv img {
   position: absolute;
   top: 0%;
   left: 0%;
+  transition: opacity 0.5s ease-in;
 }
 
 /* --------------- Focus container --------------- */
@@ -254,10 +236,6 @@ nav .side {
 }
 
 /* --------------- Markiting Analysis --------------- */
-#marketing-container {
-  width: 80%;
-  margin: auto;
-}
 
 #marketing-container > p {
   font-size: 24px;
@@ -283,25 +261,6 @@ nav .side {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.market-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.market-content > div {
-  width: 100%;
-}
-
-.market-imgs {
-  width: 100%;
-}
-
-
-.market-imgs img {
-  width: 100%;
-}
-
 .market-content .left-content > div {
   display: flex;
   background: linear-gradient(rgba(27, 51, 81, 0.8), rgba(20, 41, 67, 0.8));
@@ -320,6 +279,9 @@ nav .side {
   aspect-ratio: 3/2;
 }
 
+.market-images{
+  width: 100%;
+}
 /* .--------------- works mobile --------------- */
 #mobile-container {
   display: flex;
