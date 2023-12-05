@@ -482,6 +482,8 @@ nav .side {
   right: 50%;
   background: linear-gradient(270deg, rgba(27, 51, 81, 0.80) -0.94%, rgba(20, 41, 67, 0.80) 100%) padding-box,
   linear-gradient(to right, #203c5e, rgba(0, 0, 0, 0)) border-box;
+}
+
 /* ------------- Play video button and shadow animation ----------- */
 .play-video-boxe {
   width: 3.5rem;
@@ -764,8 +766,8 @@ nav .side {
   margin: auto;
 }
 
-#salution-container .container {
-  background: #142840;
+#salution-container .container-main-container {
+  /* background: #142840; */
   border-radius: 10px;
 }
 
